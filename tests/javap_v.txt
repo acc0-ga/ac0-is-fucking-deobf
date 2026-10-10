@@ -1,0 +1,1709 @@
+﻿Classfile /E:/jarobf/tests/Sample.class
+  Last modified 2026年10月7日; size 9274 bytes
+  SHA-256 checksum 7142fdb3d1004760a3b0207e6e39cb4b51f88a54ec1cd2ba9f601be1ee5214b7
+  Compiled from "Sample.java"
+public class Sample
+  minor version: 0
+  major version: 52
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #11                         // Sample
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 2, methods: 17, attributes: 3
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Class              #8            // java/util/ArrayList
+    #8 = Utf8               java/util/ArrayList
+    #9 = Methodref          #7.#3         // java/util/ArrayList."<init>":()V
+   #10 = Fieldref           #11.#12       // Sample.items:Ljava/util/List;
+   #11 = Class              #13           // Sample
+   #12 = NameAndType        #14:#15       // items:Ljava/util/List;
+   #13 = Utf8               Sample
+   #14 = Utf8               items
+   #15 = Utf8               Ljava/util/List;
+   #16 = Long               25214903917l
+   #18 = Fieldref           #11.#19       // Sample.seed:J
+   #19 = NameAndType        #20:#21       // seed:J
+   #20 = Utf8               seed
+   #21 = Utf8               J
+   #22 = String             #23           // annotation-worked
+   #23 = Utf8               annotation-worked
+   #24 = Class              #25           // java/lang/IllegalStateException
+   #25 = Utf8               java/lang/IllegalStateException
+   #26 = Class              #27           // java/lang/StringBuilder
+   #27 = Utf8               java/lang/StringBuilder
+   #28 = Methodref          #26.#3        // java/lang/StringBuilder."<init>":()V
+   #29 = String             #30           // too big:
+   #30 = Utf8               too big:
+   #31 = Methodref          #26.#32       // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #32 = NameAndType        #33:#34       // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #33 = Utf8               append
+   #34 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #35 = Methodref          #26.#36       // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+   #36 = NameAndType        #33:#37       // append:(I)Ljava/lang/StringBuilder;
+   #37 = Utf8               (I)Ljava/lang/StringBuilder;
+   #38 = Methodref          #26.#39       // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #39 = NameAndType        #40:#41       // toString:()Ljava/lang/String;
+   #40 = Utf8               toString
+   #41 = Utf8               ()Ljava/lang/String;
+   #42 = Methodref          #24.#43       // java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+   #43 = NameAndType        #5:#44        // "<init>":(Ljava/lang/String;)V
+   #44 = Utf8               (Ljava/lang/String;)V
+   #45 = Methodref          #11.#46       // Sample.risky:(II)I
+   #46 = NameAndType        #47:#48       // risky:(II)I
+   #47 = Utf8               risky
+   #48 = Utf8               (II)I
+   #49 = Methodref          #24.#50       // java/lang/IllegalStateException.getMessage:()Ljava/lang/String;
+   #50 = NameAndType        #51:#41       // getMessage:()Ljava/lang/String;
+   #51 = Utf8               getMessage
+   #52 = Methodref          #53.#54       // java/lang/String.length:()I
+   #53 = Class              #55           // java/lang/String
+   #54 = NameAndType        #56:#57       // length:()I
+   #55 = Utf8               java/lang/String
+   #56 = Utf8               length
+   #57 = Utf8               ()I
+   #58 = Class              #59           // java/lang/IllegalArgumentException
+   #59 = Utf8               java/lang/IllegalArgumentException
+   #60 = String             #61           // zero
+   #61 = Utf8               zero
+   #62 = Methodref          #58.#43       // java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+   #63 = Long               31l
+   #65 = Float              2.5f
+   #66 = Long               4096l
+   #68 = Long               8192l
+   #70 = String             #71           // val=
+   #71 = Utf8               val=
+   #72 = Methodref          #26.#73       // java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+   #73 = NameAndType        #33:#74       // append:(J)Ljava/lang/StringBuilder;
+   #74 = Utf8               (J)Ljava/lang/StringBuilder;
+   #75 = Methodref          #26.#76       // java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+   #76 = NameAndType        #33:#77       // append:(C)Ljava/lang/StringBuilder;
+   #77 = Utf8               (C)Ljava/lang/StringBuilder;
+   #78 = Methodref          #26.#79       // java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+   #79 = NameAndType        #33:#80       // append:(D)Ljava/lang/StringBuilder;
+   #80 = Utf8               (D)Ljava/lang/StringBuilder;
+   #81 = Methodref          #26.#54       // java/lang/StringBuilder.length:()I
+   #82 = String             #83           // -
+   #83 = Utf8               -
+   #84 = String             #85           // !
+   #85 = Utf8               !
+   #86 = Methodref          #53.#87       // java/lang/String.hashCode:()I
+   #87 = NameAndType        #88:#57       // hashCode:()I
+   #88 = Utf8               hashCode
+   #89 = InterfaceMethodref #90.#91       // java/util/List.iterator:()Ljava/util/Iterator;
+   #90 = Class              #92           // java/util/List
+   #91 = NameAndType        #93:#94       // iterator:()Ljava/util/Iterator;
+   #92 = Utf8               java/util/List
+   #93 = Utf8               iterator
+   #94 = Utf8               ()Ljava/util/Iterator;
+   #95 = InterfaceMethodref #96.#97       // java/util/Iterator.hasNext:()Z
+   #96 = Class              #98           // java/util/Iterator
+   #97 = NameAndType        #99:#100      // hasNext:()Z
+   #98 = Utf8               java/util/Iterator
+   #99 = Utf8               hasNext
+  #100 = Utf8               ()Z
+  #101 = InterfaceMethodref #96.#102      // java/util/Iterator.next:()Ljava/lang/Object;
+  #102 = NameAndType        #103:#104     // next:()Ljava/lang/Object;
+  #103 = Utf8               next
+  #104 = Utf8               ()Ljava/lang/Object;
+  #105 = Class              #106          // java/lang/Number
+  #106 = Utf8               java/lang/Number
+  #107 = Methodref          #2.#108       // java/lang/Object.getClass:()Ljava/lang/Class;
+  #108 = NameAndType        #109:#110     // getClass:()Ljava/lang/Class;
+  #109 = Utf8               getClass
+  #110 = Utf8               ()Ljava/lang/Class;
+  #111 = Methodref          #112.#113     // java/lang/Class.getSimpleName:()Ljava/lang/String;
+  #112 = Class              #114          // java/lang/Class
+  #113 = NameAndType        #115:#41      // getSimpleName:()Ljava/lang/String;
+  #114 = Utf8               java/lang/Class
+  #115 = Utf8               getSimpleName
+  #116 = String             #117          // :
+  #117 = Utf8               :
+  #118 = Methodref          #105.#119     // java/lang/Number.doubleValue:()D
+  #119 = NameAndType        #120:#121     // doubleValue:()D
+  #120 = Utf8               doubleValue
+  #121 = Utf8               ()D
+  #122 = InterfaceMethodref #90.#123      // java/util/List.add:(Ljava/lang/Object;)Z
+  #123 = NameAndType        #124:#125     // add:(Ljava/lang/Object;)Z
+  #124 = Utf8               add
+  #125 = Utf8               (Ljava/lang/Object;)Z
+  #126 = Class              #127          // java/util/LinkedHashMap
+  #127 = Utf8               java/util/LinkedHashMap
+  #128 = Methodref          #126.#3       // java/util/LinkedHashMap."<init>":()V
+  #129 = String             #130          // k
+  #130 = Utf8               k
+  #131 = Class              #132          // java/lang/Integer
+  #132 = Utf8               java/lang/Integer
+  #133 = Methodref          #131.#134     // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #134 = NameAndType        #135:#136     // valueOf:(I)Ljava/lang/Integer;
+  #135 = Utf8               valueOf
+  #136 = Utf8               (I)Ljava/lang/Integer;
+  #137 = Methodref          #138.#139     // java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+  #138 = Class              #140          // java/util/Arrays
+  #139 = NameAndType        #141:#142     // asList:([Ljava/lang/Object;)Ljava/util/List;
+  #140 = Utf8               java/util/Arrays
+  #141 = Utf8               asList
+  #142 = Utf8               ([Ljava/lang/Object;)Ljava/util/List;
+  #143 = InterfaceMethodref #144.#145     // java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #144 = Class              #146          // java/util/Map
+  #145 = NameAndType        #147:#148     // put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #146 = Utf8               java/util/Map
+  #147 = Utf8               put
+  #148 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #149 = InterfaceMethodref #144.#39      // java/util/Map.toString:()Ljava/lang/String;
+  #150 = Class              #151          // "[[I"
+  #151 = Utf8               [[I
+  #152 = String             #153          // alpha
+  #153 = Utf8               alpha
+  #154 = String             #155          // beta
+  #155 = Utf8               beta
+  #156 = String             #157          // gamma
+  #157 = Utf8               gamma
+  #158 = Methodref          #159.#160     // java/lang/Math.sqrt:(D)D
+  #159 = Class              #161          // java/lang/Math
+  #160 = NameAndType        #162:#163     // sqrt:(D)D
+  #161 = Utf8               java/lang/Math
+  #162 = Utf8               sqrt
+  #163 = Utf8               (D)D
+  #164 = Methodref          #165.#166     // Sample$Color.values:()[LSample$Color;
+  #165 = Class              #167          // Sample$Color
+  #166 = NameAndType        #168:#169     // values:()[LSample$Color;
+  #167 = Utf8               Sample$Color
+  #168 = Utf8               values
+  #169 = Utf8               ()[LSample$Color;
+  #170 = InvokeDynamic      #0:#171       // #0:apply:()Ljava/util/function/Function;
+  #171 = NameAndType        #172:#173     // apply:()Ljava/util/function/Function;
+  #172 = Utf8               apply
+  #173 = Utf8               ()Ljava/util/function/Function;
+  #174 = InvokeDynamic      #1:#175       // #1:test:()Ljava/util/function/Predicate;
+  #175 = NameAndType        #176:#177     // test:()Ljava/util/function/Predicate;
+  #176 = Utf8               test
+  #177 = Utf8               ()Ljava/util/function/Predicate;
+  #178 = InterfaceMethodref #90.#179      // java/util/List.removeIf:(Ljava/util/function/Predicate;)Z
+  #179 = NameAndType        #180:#181     // removeIf:(Ljava/util/function/Predicate;)Z
+  #180 = Utf8               removeIf
+  #181 = Utf8               (Ljava/util/function/Predicate;)Z
+  #182 = InvokeDynamic      #2:#183       // #2:accept:(Ljava/util/List;Ljava/util/function/Function;)Ljava/util/function/Consumer;
+  #183 = NameAndType        #184:#185     // accept:(Ljava/util/List;Ljava/util/function/Function;)Ljava/util/function/Consumer;
+  #184 = Utf8               accept
+  #185 = Utf8               (Ljava/util/List;Ljava/util/function/Function;)Ljava/util/function/Consumer;
+  #186 = InterfaceMethodref #90.#187      // java/util/List.forEach:(Ljava/util/function/Consumer;)V
+  #187 = NameAndType        #188:#189     // forEach:(Ljava/util/function/Consumer;)V
+  #188 = Utf8               forEach
+  #189 = Utf8               (Ljava/util/function/Consumer;)V
+  #190 = InvokeDynamic      #3:#191       // #3:compare:()Ljava/util/Comparator;
+  #191 = NameAndType        #192:#193     // compare:()Ljava/util/Comparator;
+  #192 = Utf8               compare
+  #193 = Utf8               ()Ljava/util/Comparator;
+  #194 = InterfaceMethodref #90.#195      // java/util/List.sort:(Ljava/util/Comparator;)V
+  #195 = NameAndType        #196:#197     // sort:(Ljava/util/Comparator;)V
+  #196 = Utf8               sort
+  #197 = Utf8               (Ljava/util/Comparator;)V
+  #198 = String             #199          // ,
+  #199 = Utf8               ,
+  #200 = Methodref          #53.#201      // java/lang/String.join:(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+  #201 = NameAndType        #202:#203     // join:(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+  #202 = Utf8               join
+  #203 = Utf8               (Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+  #204 = String             #205          // |
+  #205 = Utf8               |
+  #206 = String             #207          // RED
+  #207 = Utf8               RED
+  #208 = Methodref          #165.#209     // Sample$Color.valueOf:(Ljava/lang/String;)LSample$Color;
+  #209 = NameAndType        #135:#210     // valueOf:(Ljava/lang/String;)LSample$Color;
+  #210 = Utf8               (Ljava/lang/String;)LSample$Color;
+  #211 = Methodref          #165.#212     // Sample$Color.name:()Ljava/lang/String;
+  #212 = NameAndType        #213:#41      // name:()Ljava/lang/String;
+  #213 = Utf8               name
+  #214 = Methodref          #11.#3        // Sample."<init>":()V
+  #215 = Methodref          #11.#216      // Sample.compute:(I)I
+  #216 = NameAndType        #217:#218     // compute:(I)I
+  #217 = Utf8               compute
+  #218 = Utf8               (I)I
+  #219 = Long               123456789l
+  #221 = Double             2.75d
+  #223 = Float              1.5f
+  #224 = Methodref          #11.#225      // Sample.mixed:(JDFZCBS)J
+  #225 = NameAndType        #226:#227     // mixed:(JDFZCBS)J
+  #226 = Utf8               mixed
+  #227 = Utf8               (JDFZCBS)J
+  #228 = Methodref          #11.#229      // Sample.arrays:(I)[I
+  #229 = NameAndType        #230:#231     // arrays:(I)[I
+  #230 = Utf8               arrays
+  #231 = Utf8               (I)[I
+  #232 = Methodref          #11.#233      // Sample.loops:(I)I
+  #233 = NameAndType        #234:#218     // loops:(I)I
+  #234 = Utf8               loops
+  #235 = Methodref          #11.#236      // Sample.syncAdd:(I)I
+  #236 = NameAndType        #237:#218     // syncAdd:(I)I
+  #237 = Utf8               syncAdd
+  #238 = String             #239          // aa
+  #239 = Utf8               aa
+  #240 = String             #241          // bbbb
+  #241 = Utf8               bbbb
+  #242 = String             #243          // c
+  #243 = Utf8               c
+  #244 = String             #245          // dddddd
+  #245 = Utf8               dddddd
+  #246 = Methodref          #7.#247       // java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+  #247 = NameAndType        #5:#248       // "<init>":(Ljava/util/Collection;)V
+  #248 = Utf8               (Ljava/util/Collection;)V
+  #249 = Methodref          #11.#250      // Sample.lambdaish:(Ljava/util/List;)Ljava/lang/String;
+  #250 = NameAndType        #251:#252     // lambdaish:(Ljava/util/List;)Ljava/lang/String;
+  #251 = Utf8               lambdaish
+  #252 = Utf8               (Ljava/util/List;)Ljava/lang/String;
+  #253 = String             #254          // x
+  #254 = Utf8               x
+  #255 = String             #256          // y
+  #256 = Utf8               y
+  #257 = Methodref          #11.#258      // Sample.build:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #258 = NameAndType        #259:#260     // build:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #259 = Utf8               build
+  #260 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #261 = Fieldref           #262.#263     // java/lang/System.out:Ljava/io/PrintStream;
+  #262 = Class              #264          // java/lang/System
+  #263 = NameAndType        #265:#266     // out:Ljava/io/PrintStream;
+  #264 = Utf8               java/lang/System
+  #265 = Utf8               out
+  #266 = Utf8               Ljava/io/PrintStream;
+  #267 = String             #268          // RESULT r=
+  #268 = Utf8               RESULT r=
+  #269 = Methodref          #270.#271     // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #270 = Class              #272          // java/io/PrintStream
+  #271 = NameAndType        #273:#44      // println:(Ljava/lang/String;)V
+  #272 = Utf8               java/io/PrintStream
+  #273 = Utf8               println
+  #274 = String             #275          // RESULT out=
+  #275 = Utf8               RESULT out=
+  #276 = String             #277          // RESULT built=
+  #277 = Utf8               RESULT built=
+  #278 = String             #279          // RESULT ann=
+  #279 = Utf8               RESULT ann=
+  #280 = Methodref          #11.#281      // Sample.annotated:()Ljava/lang/String;
+  #281 = NameAndType        #282:#41      // annotated:()Ljava/lang/String;
+  #282 = Utf8               annotated
+  #283 = String             #284          // RESULT color=
+  #284 = Utf8               RESULT color=
+  #285 = Methodref          #11.#286      // Sample.pick:(I)LSample$Color;
+  #286 = NameAndType        #287:#288     // pick:(I)LSample$Color;
+  #287 = Utf8               pick
+  #288 = Utf8               (I)LSample$Color;
+  #289 = Methodref          #26.#290      // java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #290 = NameAndType        #33:#291      // append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #291 = Utf8               (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #292 = String             #293          // RESULT gen=
+  #293 = Utf8               RESULT gen=
+  #294 = Double             2.5d
+  #296 = Methodref          #297.#298     // java/lang/Double.valueOf:(D)Ljava/lang/Double;
+  #297 = Class              #299          // java/lang/Double
+  #298 = NameAndType        #135:#300     // valueOf:(D)Ljava/lang/Double;
+  #299 = Utf8               java/lang/Double
+  #300 = Utf8               (D)Ljava/lang/Double;
+  #301 = Float              3.0f
+  #302 = Methodref          #303.#304     // java/lang/Float.valueOf:(F)Ljava/lang/Float;
+  #303 = Class              #305          // java/lang/Float
+  #304 = NameAndType        #135:#306     // valueOf:(F)Ljava/lang/Float;
+  #305 = Utf8               java/lang/Float
+  #306 = Utf8               (F)Ljava/lang/Float;
+  #307 = Methodref          #11.#308      // Sample.generics:(Ljava/util/List;)Ljava/util/List;
+  #308 = NameAndType        #309:#310     // generics:(Ljava/util/List;)Ljava/util/List;
+  #309 = Utf8               generics
+  #310 = Utf8               (Ljava/util/List;)Ljava/util/List;
+  #311 = InterfaceMethodref #90.#312      // java/util/List.size:()I
+  #312 = NameAndType        #313:#57      // size:()I
+  #313 = Utf8               size
+  #314 = String             #315          // RESULT inner=
+  #315 = Utf8               RESULT inner=
+  #316 = Class              #317          // Sample$Inner
+  #317 = Utf8               Sample$Inner
+  #318 = Methodref          #316.#319     // Sample$Inner."<init>":(I)V
+  #319 = NameAndType        #5:#320       // "<init>":(I)V
+  #320 = Utf8               (I)V
+  #321 = Methodref          #316.#322     // Sample$Inner.getX:()I
+  #322 = NameAndType        #323:#57      // getX:()I
+  #323 = Utf8               getX
+  #324 = Methodref          #131.#325     // java/lang/Integer.compare:(II)I
+  #325 = NameAndType        #192:#48      // compare:(II)I
+  #326 = InterfaceMethodref #327.#328     // java/util/function/Function.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+  #327 = Class              #329          // java/util/function/Function
+  #328 = NameAndType        #172:#330     // apply:(Ljava/lang/Object;)Ljava/lang/Object;
+  #329 = Utf8               java/util/function/Function
+  #330 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #331 = Methodref          #53.#332      // java/lang/String.toUpperCase:()Ljava/lang/String;
+  #332 = NameAndType        #333:#41      // toUpperCase:()Ljava/lang/String;
+  #333 = Utf8               toUpperCase
+  #334 = String             #335          // ::
+  #335 = Utf8               ::
+  #336 = Utf8               Signature
+  #337 = Utf8               Ljava/util/List<Ljava/lang/String;>;
+  #338 = Utf8               Code
+  #339 = Utf8               LineNumberTable
+  #340 = Utf8               LocalVariableTable
+  #341 = Utf8               this
+  #342 = Utf8               LSample;
+  #343 = Utf8               RuntimeInvisibleAnnotations
+  #344 = Utf8               LSample$Meta;
+  #345 = Utf8               value
+  #346 = Utf8               hello
+  #347 = Utf8               num
+  #348 = Integer            3
+  #349 = Utf8               i
+  #350 = Utf8               I
+  #351 = Utf8               e
+  #352 = Utf8               Ljava/lang/IllegalStateException;
+  #353 = Utf8               n
+  #354 = Utf8               acc
+  #355 = Utf8               StackMapTable
+  #356 = Class              #357          // java/lang/Throwable
+  #357 = Utf8               java/lang/Throwable
+  #358 = Utf8               a
+  #359 = Utf8               b
+  #360 = Utf8               l
+  #361 = Utf8               d
+  #362 = Utf8               D
+  #363 = Utf8               f
+  #364 = Utf8               F
+  #365 = Utf8               z
+  #366 = Utf8               Z
+  #367 = Utf8               C
+  #368 = Utf8               by
+  #369 = Utf8               B
+  #370 = Utf8               sh
+  #371 = Utf8               S
+  #372 = Utf8               r
+  #373 = Utf8               sb
+  #374 = Utf8               Ljava/lang/StringBuilder;
+  #375 = Utf8               Ljava/lang/String;
+  #376 = Utf8               Ljava/lang/Number;
+  #377 = Utf8               in
+  #378 = Utf8               m
+  #379 = Utf8               Ljava/util/Map;
+  #380 = Utf8               LocalVariableTypeTable
+  #381 = Utf8               Ljava/util/List<+Ljava/lang/Number;>;
+  #382 = Utf8               Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/Integer;>;>;
+  #383 = Utf8               (Ljava/util/List<+Ljava/lang/Number;>;)Ljava/util/List<Ljava/lang/String;>;
+  #384 = Utf8               v
+  #385 = Utf8               row
+  #386 = Utf8               [I
+  #387 = Utf8               s
+  #388 = Utf8               grid
+  #389 = Utf8               names
+  #390 = Utf8               [Ljava/lang/String;
+  #391 = Utf8               blob
+  #392 = Utf8               [B
+  #393 = Utf8               big
+  #394 = Utf8               [J
+  #395 = Utf8               dbl
+  #396 = Utf8               [D
+  #397 = Utf8               sum
+  #398 = Class              #390          // "[Ljava/lang/String;"
+  #399 = Class              #392          // "[B"
+  #400 = Class              #394          // "[J"
+  #401 = Class              #396          // "[D"
+  #402 = Class              #386          // "[I"
+  #403 = Utf8               all
+  #404 = Utf8               [LSample$Color;
+  #405 = Utf8               list
+  #406 = Utf8               up
+  #407 = Utf8               Ljava/util/function/Function;
+  #408 = Utf8               longish
+  #409 = Utf8               Ljava/util/function/Predicate;
+  #410 = Utf8               mapped
+  #411 = Utf8               cmp
+  #412 = Utf8               Ljava/util/Comparator;
+  #413 = Utf8               joined
+  #414 = Utf8               Ljava/util/function/Function<Ljava/lang/String;Ljava/lang/String;>;
+  #415 = Utf8               Ljava/util/function/Predicate<Ljava/lang/String;>;
+  #416 = Utf8               Ljava/util/Comparator<Ljava/lang/String;>;
+  #417 = Utf8               (Ljava/util/List<Ljava/lang/String;>;)Ljava/lang/String;
+  #418 = Utf8               j
+  #419 = Utf8               main
+  #420 = Utf8               ([Ljava/lang/String;)V
+  #421 = Utf8               args
+  #422 = Utf8               built
+  #423 = Utf8               lambda$lambdaish$3
+  #424 = Utf8               (Ljava/lang/String;Ljava/lang/String;)I
+  #425 = Utf8               lambda$lambdaish$2
+  #426 = Utf8               (Ljava/util/List;Ljava/util/function/Function;Ljava/lang/String;)V
+  #427 = Utf8               lambda$lambdaish$1
+  #428 = Utf8               (Ljava/lang/String;)Z
+  #429 = Utf8               lambda$lambdaish$0
+  #430 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #431 = Utf8               SourceFile
+  #432 = Utf8               Sample.java
+  #433 = Utf8               BootstrapMethods
+  #434 = MethodType         #330          //  (Ljava/lang/Object;)Ljava/lang/Object;
+  #435 = MethodHandle       6:#436        // REF_invokeStatic Sample.lambda$lambdaish$0:(Ljava/lang/String;)Ljava/lang/String;
+  #436 = Methodref          #11.#437      // Sample.lambda$lambdaish$0:(Ljava/lang/String;)Ljava/lang/String;
+  #437 = NameAndType        #429:#430     // lambda$lambdaish$0:(Ljava/lang/String;)Ljava/lang/String;
+  #438 = MethodType         #430          //  (Ljava/lang/String;)Ljava/lang/String;
+  #439 = MethodType         #125          //  (Ljava/lang/Object;)Z
+  #440 = MethodHandle       6:#441        // REF_invokeStatic Sample.lambda$lambdaish$1:(Ljava/lang/String;)Z
+  #441 = Methodref          #11.#442      // Sample.lambda$lambdaish$1:(Ljava/lang/String;)Z
+  #442 = NameAndType        #427:#428     // lambda$lambdaish$1:(Ljava/lang/String;)Z
+  #443 = MethodType         #428          //  (Ljava/lang/String;)Z
+  #444 = MethodType         #445          //  (Ljava/lang/Object;)V
+  #445 = Utf8               (Ljava/lang/Object;)V
+  #446 = MethodHandle       6:#447        // REF_invokeStatic Sample.lambda$lambdaish$2:(Ljava/util/List;Ljava/util/function/Function;Ljava/lang/String;)V
+  #447 = Methodref          #11.#448      // Sample.lambda$lambdaish$2:(Ljava/util/List;Ljava/util/function/Function;Ljava/lang/String;)V
+  #448 = NameAndType        #425:#426     // lambda$lambdaish$2:(Ljava/util/List;Ljava/util/function/Function;Ljava/lang/String;)V
+  #449 = MethodType         #44           //  (Ljava/lang/String;)V
+  #450 = MethodType         #451          //  (Ljava/lang/Object;Ljava/lang/Object;)I
+  #451 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)I
+  #452 = MethodHandle       6:#453        // REF_invokeStatic Sample.lambda$lambdaish$3:(Ljava/lang/String;Ljava/lang/String;)I
+  #453 = Methodref          #11.#454      // Sample.lambda$lambdaish$3:(Ljava/lang/String;Ljava/lang/String;)I
+  #454 = NameAndType        #423:#424     // lambda$lambdaish$3:(Ljava/lang/String;Ljava/lang/String;)I
+  #455 = MethodType         #424          //  (Ljava/lang/String;Ljava/lang/String;)I
+  #456 = MethodHandle       6:#457        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #457 = Methodref          #458.#459     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #458 = Class              #460          // java/lang/invoke/LambdaMetafactory
+  #459 = NameAndType        #461:#462     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #460 = Utf8               java/lang/invoke/LambdaMetafactory
+  #461 = Utf8               metafactory
+  #462 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #463 = Utf8               InnerClasses
+  #464 = Utf8               Color
+  #465 = Utf8               Inner
+  #466 = Class              #467          // Sample$Meta
+  #467 = Utf8               Sample$Meta
+  #468 = Utf8               Meta
+  #469 = Class              #470          // java/lang/invoke/MethodHandles$Lookup
+  #470 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #471 = Class              #472          // java/lang/invoke/MethodHandles
+  #472 = Utf8               java/lang/invoke/MethodHandles
+  #473 = Utf8               Lookup
+{
+  private final java.util.List<java.lang.String> items;
+    descriptor: Ljava/util/List;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #337                         // Ljava/util/List<Ljava/lang/String;>;
+
+  private long seed;
+    descriptor: J
+    flags: (0x0002) ACC_PRIVATE
+
+  public Sample();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #7                  // class java/util/ArrayList
+         8: dup
+         9: invokespecial #9                  // Method java/util/ArrayList."<init>":()V
+        12: putfield      #10                 // Field items:Ljava/util/List;
+        15: aload_0
+        16: ldc2_w        #16                 // long 25214903917l
+        19: putfield      #18                 // Field seed:J
+        22: return
+      LineNumberTable:
+        line 4: 0
+        line 20: 4
+        line 21: 15
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      23     0  this   LSample;
+
+  public static java.lang.String annotated();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: ldc           #22                 // String annotation-worked
+         2: areturn
+      LineNumberTable:
+        line 25: 0
+    RuntimeInvisibleAnnotations:
+      0: #344(#345=s#346,#347=I#348)
+        Sample$Meta(
+          value="hello"
+          num=3
+        )
+
+  public int compute(int);
+    descriptor: (I)I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=5, args_size=2
+         0: iconst_0
+         1: istore_2
+         2: iload_1
+         3: iconst_5
+         4: irem
+         5: tableswitch   { // 0 to 3
+
+                       0: 36
+
+                       1: 42
+
+                       2: 48
+
+                       3: 54
+                 default: 60
+            }
+        36: iinc          2, 3
+        39: goto          63
+        42: iinc          2, 7
+        45: goto          63
+        48: iinc          2, 11
+        51: goto          63
+        54: iinc          2, 13
+        57: goto          63
+        60: iinc          2, 17
+        63: iconst_0
+        64: istore_3
+        65: iload_3
+        66: iload_1
+        67: if_icmpge     95
+        70: iload_3
+        71: iconst_1
+        72: iand
+        73: ifne          85
+        76: iload_2
+        77: iload_3
+        78: iconst_3
+        79: imul
+        80: iadd
+        81: istore_2
+        82: goto          89
+        85: iload_2
+        86: iload_3
+        87: isub
+        88: istore_2
+        89: iinc          3, 1
+        92: goto          65
+        95: iload_1
+        96: bipush        100
+        98: if_icmple     128
+       101: new           #24                 // class java/lang/IllegalStateException
+       104: dup
+       105: new           #26                 // class java/lang/StringBuilder
+       108: dup
+       109: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+       112: ldc           #29                 // String too big:
+       114: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       117: iload_1
+       118: invokevirtual #35                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+       121: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       124: invokespecial #42                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+       127: athrow
+       128: aload_0
+       129: iload_2
+       130: iload_1
+       131: invokespecial #45                 // Method risky:(II)I
+       134: istore_2
+       135: iload_2
+       136: bipush        85
+       138: ixor
+       139: istore_2
+       140: goto          170
+       143: astore_3
+       144: aload_3
+       145: invokevirtual #49                 // Method java/lang/IllegalStateException.getMessage:()Ljava/lang/String;
+       148: invokevirtual #52                 // Method java/lang/String.length:()I
+       151: istore_2
+       152: iload_2
+       153: bipush        85
+       155: ixor
+       156: istore_2
+       157: goto          170
+       160: astore        4
+       162: iload_2
+       163: bipush        85
+       165: ixor
+       166: istore_2
+       167: aload         4
+       169: athrow
+       170: iload_2
+       171: ireturn
+      Exception table:
+         from    to  target type
+            95   135   143   Class java/lang/IllegalStateException
+            95   135   160   any
+           143   152   160   any
+           160   162   160   any
+      LineNumberTable:
+        line 29: 0
+        line 30: 2
+        line 31: 36
+        line 32: 42
+        line 33: 48
+        line 34: 54
+        line 35: 60
+        line 37: 63
+        line 38: 70
+        line 39: 76
+        line 41: 85
+        line 37: 89
+        line 45: 95
+        line 46: 101
+        line 48: 128
+        line 52: 135
+        line 53: 140
+        line 49: 143
+        line 50: 144
+        line 52: 152
+        line 53: 157
+        line 52: 160
+        line 53: 167
+        line 54: 170
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           65      30     3     i   I
+          144       8     3     e   Ljava/lang/IllegalStateException;
+            0     172     0  this   LSample;
+            0     172     1     n   I
+            2     170     2   acc   I
+      StackMapTable: number_of_entries = 14
+        frame_type = 252 /* append */
+          offset_delta = 36
+          locals = [ int ]
+        frame_type = 5 /* same */
+        frame_type = 5 /* same */
+        frame_type = 5 /* same */
+        frame_type = 5 /* same */
+        frame_type = 2 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 1
+          locals = [ int ]
+        frame_type = 19 /* same */
+        frame_type = 3 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 5
+        frame_type = 32 /* same */
+        frame_type = 78 /* same_locals_1_stack_item */
+          stack = [ class java/lang/IllegalStateException ]
+        frame_type = 80 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+        frame_type = 9 /* same */
+
+  private int risky(int, int);
+    descriptor: (II)I
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=3, args_size=3
+         0: iload_2
+         1: ifne          14
+         4: new           #58                 // class java/lang/IllegalArgumentException
+         7: dup
+         8: ldc           #60                 // String zero
+        10: invokespecial #62                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+        13: athrow
+        14: iload_1
+        15: iload_2
+        16: idiv
+        17: iload_1
+        18: iload_2
+        19: irem
+        20: iadd
+        21: ireturn
+      LineNumberTable:
+        line 58: 0
+        line 59: 4
+        line 61: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      22     0  this   LSample;
+            0      22     1     a   I
+            0      22     2     b   I
+      StackMapTable: number_of_entries = 1
+        frame_type = 14 /* same */
+
+  public long mixed(long, double, float, boolean, char, byte, short);
+    descriptor: (JDFZCBS)J
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=13, args_size=8
+         0: lload_1
+         1: ldc2_w        #63                 // long 31l
+         4: lmul
+         5: dload_3
+         6: d2l
+         7: ladd
+         8: lstore        10
+        10: lload         10
+        12: fload         5
+        14: ldc           #65                 // float 2.5f
+        16: fmul
+        17: f2l
+        18: ladd
+        19: lstore        10
+        21: lload         10
+        23: iload         6
+        25: ifeq          34
+        28: ldc2_w        #66                 // long 4096l
+        31: goto          37
+        34: ldc2_w        #68                 // long 8192l
+        37: lxor
+        38: lstore        10
+        40: lload         10
+        42: iload         7
+        44: iload         8
+        46: iadd
+        47: iload         9
+        49: iadd
+        50: i2l
+        51: ladd
+        52: lstore        10
+        54: new           #26                 // class java/lang/StringBuilder
+        57: dup
+        58: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+        61: astore        12
+        63: aload         12
+        65: ldc           #70                 // String val=
+        67: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        70: lload         10
+        72: invokevirtual #72                 // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+        75: bipush        47
+        77: invokevirtual #75                 // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+        80: dload_3
+        81: invokevirtual #78                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+        84: pop
+        85: lload         10
+        87: aload         12
+        89: invokevirtual #81                 // Method java/lang/StringBuilder.length:()I
+        92: i2l
+        93: ladd
+        94: lreturn
+      LineNumberTable:
+        line 65: 0
+        line 66: 10
+        line 67: 21
+        line 68: 40
+        line 69: 54
+        line 70: 63
+        line 71: 85
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      95     0  this   LSample;
+            0      95     1     l   J
+            0      95     3     d   D
+            0      95     5     f   F
+            0      95     6     z   Z
+            0      95     7     c   C
+            0      95     8    by   B
+            0      95     9    sh   S
+           10      85    10     r   J
+           63      32    12    sb   Ljava/lang/StringBuilder;
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 34
+          locals = [ class Sample, long, double, float, int, int, int, int, long ]
+          stack = [ long ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 2
+          locals = [ class Sample, long, double, float, int, int, int, int, long ]
+          stack = [ long, long ]
+
+  public java.lang.String build(java.lang.String, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: new           #26                 // class java/lang/StringBuilder
+         3: dup
+         4: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+         7: aload_1
+         8: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        11: ldc           #82                 // String -
+        13: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        16: aload_2
+        17: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        20: ldc           #84                 // String !
+        22: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        25: aload_1
+        26: invokevirtual #52                 // Method java/lang/String.length:()I
+        29: invokevirtual #35                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        32: aload_2
+        33: invokevirtual #86                 // Method java/lang/String.hashCode:()I
+        36: invokevirtual #35                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        39: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        42: areturn
+      LineNumberTable:
+        line 75: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      43     0  this   LSample;
+            0      43     1     a   Ljava/lang/String;
+            0      43     2     b   Ljava/lang/String;
+
+  public java.util.List<java.lang.String> generics(java.util.List<? extends java.lang.Number>);
+    descriptor: (Ljava/util/List;)Ljava/util/List;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=5, args_size=2
+         0: new           #7                  // class java/util/ArrayList
+         3: dup
+         4: invokespecial #9                  // Method java/util/ArrayList."<init>":()V
+         7: astore_2
+         8: aload_1
+         9: invokeinterface #89,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        14: astore_3
+        15: aload_3
+        16: invokeinterface #95,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        21: ifeq          79
+        24: aload_3
+        25: invokeinterface #101,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        30: checkcast     #105                // class java/lang/Number
+        33: astore        4
+        35: aload_2
+        36: new           #26                 // class java/lang/StringBuilder
+        39: dup
+        40: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+        43: aload         4
+        45: invokevirtual #107                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        48: invokevirtual #111                // Method java/lang/Class.getSimpleName:()Ljava/lang/String;
+        51: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        54: ldc           #116                // String :
+        56: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        59: aload         4
+        61: invokevirtual #118                // Method java/lang/Number.doubleValue:()D
+        64: invokevirtual #78                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+        67: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        70: invokeinterface #122,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        75: pop
+        76: goto          15
+        79: new           #126                // class java/util/LinkedHashMap
+        82: dup
+        83: invokespecial #128                // Method java/util/LinkedHashMap."<init>":()V
+        86: astore_3
+        87: aload_3
+        88: ldc           #129                // String k
+        90: iconst_3
+        91: anewarray     #131                // class java/lang/Integer
+        94: dup
+        95: iconst_0
+        96: iconst_1
+        97: invokestatic  #133                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       100: aastore
+       101: dup
+       102: iconst_1
+       103: iconst_2
+       104: invokestatic  #133                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       107: aastore
+       108: dup
+       109: iconst_2
+       110: iconst_3
+       111: invokestatic  #133                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       114: aastore
+       115: invokestatic  #137                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+       118: invokeinterface #143,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       123: pop
+       124: aload_2
+       125: aload_3
+       126: invokeinterface #149,  1          // InterfaceMethod java/util/Map.toString:()Ljava/lang/String;
+       131: invokeinterface #122,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       136: pop
+       137: aload_2
+       138: areturn
+      LineNumberTable:
+        line 79: 0
+        line 80: 8
+        line 81: 35
+        line 82: 76
+        line 83: 79
+        line 84: 87
+        line 85: 124
+        line 86: 137
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           35      41     4     x   Ljava/lang/Number;
+            0     139     0  this   LSample;
+            0     139     1    in   Ljava/util/List;
+            8     131     2   out   Ljava/util/List;
+           87      52     3     m   Ljava/util/Map;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0     139     1    in   Ljava/util/List<+Ljava/lang/Number;>;
+            8     131     2   out   Ljava/util/List<Ljava/lang/String;>;
+           87      52     3     m   Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/Integer;>;>;
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 15
+          locals = [ class java/util/List, class java/util/Iterator ]
+        frame_type = 250 /* chop */
+          offset_delta = 63
+    Signature: #383                         // (Ljava/util/List<+Ljava/lang/Number;>;)Ljava/util/List<Ljava/lang/String;>;
+
+  public int[] arrays(int);
+    descriptor: (I)[I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=16, args_size=2
+         0: iload_1
+         1: iload_1
+         2: multianewarray #150,  2           // class "[[I"
+         6: astore_2
+         7: iconst_3
+         8: anewarray     #53                 // class java/lang/String
+        11: dup
+        12: iconst_0
+        13: ldc           #152                // String alpha
+        15: aastore
+        16: dup
+        17: iconst_1
+        18: ldc           #154                // String beta
+        20: aastore
+        21: dup
+        22: iconst_2
+        23: ldc           #156                // String gamma
+        25: aastore
+        26: astore_3
+        27: iconst_5
+        28: newarray       byte
+        30: dup
+        31: iconst_0
+        32: iconst_1
+        33: bastore
+        34: dup
+        35: iconst_1
+        36: iconst_2
+        37: bastore
+        38: dup
+        39: iconst_2
+        40: iconst_3
+        41: bastore
+        42: dup
+        43: iconst_3
+        44: iconst_4
+        45: bastore
+        46: dup
+        47: iconst_4
+        48: iconst_5
+        49: bastore
+        50: astore        4
+        52: iload_1
+        53: iconst_1
+        54: iadd
+        55: newarray       long
+        57: astore        5
+        59: iload_1
+        60: iconst_1
+        61: iadd
+        62: newarray       double
+        64: astore        6
+        66: iconst_0
+        67: istore        7
+        69: iload         7
+        71: iload_1
+        72: if_icmpge     120
+        75: aload_2
+        76: iload         7
+        78: aaload
+        79: iload         7
+        81: iload         7
+        83: iload         7
+        85: imul
+        86: iastore
+        87: aload         5
+        89: iload         7
+        91: iload         7
+        93: i2l
+        94: iload         7
+        96: i2l
+        97: lmul
+        98: iload         7
+       100: i2l
+       101: lmul
+       102: lastore
+       103: aload         6
+       105: iload         7
+       107: iload         7
+       109: i2d
+       110: invokestatic  #158                // Method java/lang/Math.sqrt:(D)D
+       113: dastore
+       114: iinc          7, 1
+       117: goto          69
+       120: iconst_0
+       121: istore        7
+       123: aload_2
+       124: astore        8
+       126: aload         8
+       128: arraylength
+       129: istore        9
+       131: iconst_0
+       132: istore        10
+       134: iload         10
+       136: iload         9
+       138: if_icmpge     193
+       141: aload         8
+       143: iload         10
+       145: aaload
+       146: astore        11
+       148: aload         11
+       150: astore        12
+       152: aload         12
+       154: arraylength
+       155: istore        13
+       157: iconst_0
+       158: istore        14
+       160: iload         14
+       162: iload         13
+       164: if_icmpge     187
+       167: aload         12
+       169: iload         14
+       171: iaload
+       172: istore        15
+       174: iload         7
+       176: iload         15
+       178: iadd
+       179: istore        7
+       181: iinc          14, 1
+       184: goto          160
+       187: iinc          10, 1
+       190: goto          134
+       193: aload_3
+       194: astore        8
+       196: aload         8
+       198: arraylength
+       199: istore        9
+       201: iconst_0
+       202: istore        10
+       204: iload         10
+       206: iload         9
+       208: if_icmpge     234
+       211: aload         8
+       213: iload         10
+       215: aaload
+       216: astore        11
+       218: iload         7
+       220: aload         11
+       222: invokevirtual #52                 // Method java/lang/String.length:()I
+       225: iadd
+       226: istore        7
+       228: iinc          10, 1
+       231: goto          204
+       234: iload         7
+       236: aload         4
+       238: arraylength
+       239: aload         5
+       241: iconst_0
+       242: laload
+       243: l2i
+       244: iadd
+       245: aload         6
+       247: iconst_0
+       248: daload
+       249: d2i
+       250: iadd
+       251: iadd
+       252: istore        7
+       254: iconst_2
+       255: newarray       int
+       257: dup
+       258: iconst_0
+       259: iload         7
+       261: iastore
+       262: dup
+       263: iconst_1
+       264: iload_1
+       265: iastore
+       266: areturn
+      LineNumberTable:
+        line 90: 0
+        line 91: 7
+        line 92: 27
+        line 93: 52
+        line 94: 59
+        line 95: 66
+        line 96: 75
+        line 97: 87
+        line 98: 103
+        line 95: 114
+        line 100: 120
+        line 101: 123
+        line 102: 148
+        line 101: 187
+        line 104: 193
+        line 105: 234
+        line 106: 254
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           69      51     7     i   I
+          174       7    15     v   I
+          148      39    11   row   [I
+          218      10    11     s   Ljava/lang/String;
+            0     267     0  this   LSample;
+            0     267     1     n   I
+            7     260     2  grid   [[I
+           27     240     3 names   [Ljava/lang/String;
+           52     215     4  blob   [B
+           59     208     5   big   [J
+           66     201     6   dbl   [D
+          123     144     7   sum   I
+      StackMapTable: number_of_entries = 8
+        frame_type = 255 /* full_frame */
+          offset_delta = 69
+          locals = [ class Sample, int, class "[[I", class "[Ljava/lang/String;", class "[B", class "[J", class "[D", int ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 50
+        frame_type = 255 /* full_frame */
+          offset_delta = 13
+          locals = [ class Sample, int, class "[[I", class "[Ljava/lang/String;", class "[B", class "[J", class "[D", int, class "[[I", int, int ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 25
+          locals = [ class Sample, int, class "[[I", class "[Ljava/lang/String;", class "[B", class "[J", class "[D", int, class "[[I", int, int, class "[I", class "[I", int, int ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 26
+          locals = [ class Sample, int, class "[[I", class "[Ljava/lang/String;", class "[B", class "[J", class "[D", int, class "[[I", int, int ]
+          stack = []
+        frame_type = 248 /* chop */
+          offset_delta = 5
+        frame_type = 254 /* append */
+          offset_delta = 10
+          locals = [ class "[Ljava/lang/String;", int, int ]
+        frame_type = 248 /* chop */
+          offset_delta = 29
+
+  public Sample$Color pick(int);
+    descriptor: (I)LSample$Color;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: invokestatic  #164                // Method Sample$Color.values:()[LSample$Color;
+         3: astore_2
+         4: aload_2
+         5: iload_1
+         6: aload_2
+         7: arraylength
+         8: irem
+         9: aaload
+        10: areturn
+      LineNumberTable:
+        line 110: 0
+        line 111: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   LSample;
+            0      11     1     n   I
+            4       7     2   all   [LSample$Color;
+
+  public java.lang.String lambdaish(java.util.List<java.lang.String>);
+    descriptor: (Ljava/util/List;)Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=7, args_size=2
+         0: invokedynamic #170,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+         5: astore_2
+         6: invokedynamic #174,  0            // InvokeDynamic #1:test:()Ljava/util/function/Predicate;
+        11: astore_3
+        12: aload_1
+        13: aload_3
+        14: invokeinterface #178,  2          // InterfaceMethod java/util/List.removeIf:(Ljava/util/function/Predicate;)Z
+        19: pop
+        20: new           #7                  // class java/util/ArrayList
+        23: dup
+        24: invokespecial #9                  // Method java/util/ArrayList."<init>":()V
+        27: astore        4
+        29: aload_1
+        30: aload         4
+        32: aload_2
+        33: invokedynamic #182,  0            // InvokeDynamic #2:accept:(Ljava/util/List;Ljava/util/function/Function;)Ljava/util/function/Consumer;
+        38: invokeinterface #186,  2          // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+        43: invokedynamic #190,  0            // InvokeDynamic #3:compare:()Ljava/util/Comparator;
+        48: astore        5
+        50: aload         4
+        52: aload         5
+        54: invokeinterface #194,  2          // InterfaceMethod java/util/List.sort:(Ljava/util/Comparator;)V
+        59: ldc           #198                // String ,
+        61: aload         4
+        63: invokestatic  #200                // Method java/lang/String.join:(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+        66: astore        6
+        68: new           #26                 // class java/lang/StringBuilder
+        71: dup
+        72: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+        75: aload         6
+        77: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        80: ldc           #204                // String |
+        82: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        85: ldc           #206                // String RED
+        87: invokestatic  #208                // Method Sample$Color.valueOf:(Ljava/lang/String;)LSample$Color;
+        90: invokevirtual #211                // Method Sample$Color.name:()Ljava/lang/String;
+        93: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        96: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        99: areturn
+      LineNumberTable:
+        line 115: 0
+        line 116: 6
+        line 117: 12
+        line 118: 20
+        line 119: 29
+        line 120: 43
+        line 121: 50
+        line 122: 59
+        line 123: 68
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     100     0  this   LSample;
+            0     100     1  list   Ljava/util/List;
+            6      94     2    up   Ljava/util/function/Function;
+           12      88     3 longish   Ljava/util/function/Predicate;
+           29      71     4 mapped   Ljava/util/List;
+           50      50     5   cmp   Ljava/util/Comparator;
+           68      32     6 joined   Ljava/lang/String;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0     100     1  list   Ljava/util/List<Ljava/lang/String;>;
+            6      94     2    up   Ljava/util/function/Function<Ljava/lang/String;Ljava/lang/String;>;
+           12      88     3 longish   Ljava/util/function/Predicate<Ljava/lang/String;>;
+           29      71     4 mapped   Ljava/util/List<Ljava/lang/String;>;
+           50      50     5   cmp   Ljava/util/Comparator<Ljava/lang/String;>;
+    Signature: #417                         // (Ljava/util/List<Ljava/lang/String;>;)Ljava/lang/String;
+
+  public int loops(int);
+    descriptor: (I)I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=2
+         0: iconst_0
+         1: istore_2
+         2: iload_2
+         3: iload_1
+         4: if_icmpge     47
+         7: iconst_0
+         8: istore_3
+         9: iload_3
+        10: iload_1
+        11: if_icmpge     41
+        14: iload_3
+        15: iconst_5
+        16: if_icmpne     22
+        19: goto          2
+        22: iload_3
+        23: bipush        9
+        25: if_icmpne     31
+        28: goto          47
+        31: iload_2
+        32: iload_3
+        33: iadd
+        34: istore_2
+        35: iinc          3, 1
+        38: goto          9
+        41: iinc          2, 1
+        44: goto          2
+        47: iinc          2, -1
+        50: iload_2
+        51: iload_1
+        52: if_icmpgt     47
+        55: iload_2
+        56: ireturn
+      LineNumberTable:
+        line 127: 0
+        line 129: 2
+        line 130: 7
+        line 131: 14
+        line 132: 22
+        line 133: 31
+        line 130: 35
+        line 135: 41
+        line 138: 47
+        line 139: 50
+        line 140: 55
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            9      32     3     j   I
+            0      57     0  this   LSample;
+            0      57     1     n   I
+            2      55     2     i   I
+      StackMapTable: number_of_entries = 6
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 252 /* append */
+          offset_delta = 6
+          locals = [ int ]
+        frame_type = 12 /* same */
+        frame_type = 8 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 9
+        frame_type = 5 /* same */
+
+  public synchronized int syncAdd(int);
+    descriptor: (I)I
+    flags: (0x0021) ACC_PUBLIC, ACC_SYNCHRONIZED
+    Code:
+      stack=6, locals=4, args_size=2
+         0: aload_0
+         1: dup
+         2: getfield      #18                 // Field seed:J
+         5: iload_1
+         6: i2l
+         7: ladd
+         8: putfield      #18                 // Field seed:J
+        11: aload_0
+        12: dup
+        13: astore_2
+        14: monitorenter
+        15: aload_0
+        16: dup
+        17: getfield      #18                 // Field seed:J
+        20: aload_0
+        21: getfield      #18                 // Field seed:J
+        24: bipush        7
+        26: lshl
+        27: lxor
+        28: putfield      #18                 // Field seed:J
+        31: aload_2
+        32: monitorexit
+        33: goto          41
+        36: astore_3
+        37: aload_2
+        38: monitorexit
+        39: aload_3
+        40: athrow
+        41: aload_0
+        42: getfield      #18                 // Field seed:J
+        45: l2i
+        46: ireturn
+      Exception table:
+         from    to  target type
+            15    33    36   any
+            36    39    36   any
+      LineNumberTable:
+        line 144: 0
+        line 145: 11
+        line 146: 15
+        line 147: 31
+        line 148: 41
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      47     0  this   LSample;
+            0      47     1     v   I
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 36
+          locals = [ class Sample, int, class java/lang/Object ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 250 /* chop */
+          offset_delta = 4
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=11, locals=6, args_size=1
+         0: new           #11                 // class Sample
+         3: dup
+         4: invokespecial #214                // Method "<init>":()V
+         7: astore_1
+         8: aload_1
+         9: aload_0
+        10: arraylength
+        11: bipush        10
+        13: iadd
+        14: invokevirtual #215                // Method compute:(I)I
+        17: istore_2
+        18: iload_2
+        19: aload_1
+        20: ldc2_w        #219                // long 123456789l
+        23: ldc2_w        #221                // double 2.75d
+        26: ldc           #223                // float 1.5f
+        28: iconst_1
+        29: bipush        90
+        31: bipush        -3
+        33: sipush        1000
+        36: invokevirtual #224                // Method mixed:(JDFZCBS)J
+        39: l2i
+        40: iadd
+        41: istore_2
+        42: iload_2
+        43: aload_1
+        44: iconst_4
+        45: invokevirtual #228                // Method arrays:(I)[I
+        48: iconst_0
+        49: iaload
+        50: iadd
+        51: istore_2
+        52: iload_2
+        53: aload_1
+        54: bipush        20
+        56: invokevirtual #232                // Method loops:(I)I
+        59: iadd
+        60: istore_2
+        61: iload_2
+        62: aload_1
+        63: iconst_3
+        64: invokevirtual #235                // Method syncAdd:(I)I
+        67: iadd
+        68: istore_2
+        69: new           #7                  // class java/util/ArrayList
+        72: dup
+        73: iconst_4
+        74: anewarray     #53                 // class java/lang/String
+        77: dup
+        78: iconst_0
+        79: ldc           #238                // String aa
+        81: aastore
+        82: dup
+        83: iconst_1
+        84: ldc           #240                // String bbbb
+        86: aastore
+        87: dup
+        88: iconst_2
+        89: ldc           #242                // String c
+        91: aastore
+        92: dup
+        93: iconst_3
+        94: ldc           #244                // String dddddd
+        96: aastore
+        97: invokestatic  #137                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+       100: invokespecial #246                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+       103: astore_3
+       104: aload_1
+       105: aload_3
+       106: invokevirtual #249                // Method lambdaish:(Ljava/util/List;)Ljava/lang/String;
+       109: astore        4
+       111: aload_1
+       112: ldc           #253                // String x
+       114: ldc           #255                // String y
+       116: invokevirtual #257                // Method build:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       119: astore        5
+       121: getstatic     #261                // Field java/lang/System.out:Ljava/io/PrintStream;
+       124: new           #26                 // class java/lang/StringBuilder
+       127: dup
+       128: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+       131: ldc_w         #267                // String RESULT r=
+       134: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       137: iload_2
+       138: invokevirtual #35                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+       141: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       144: invokevirtual #269                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       147: getstatic     #261                // Field java/lang/System.out:Ljava/io/PrintStream;
+       150: new           #26                 // class java/lang/StringBuilder
+       153: dup
+       154: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+       157: ldc_w         #274                // String RESULT out=
+       160: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       163: aload         4
+       165: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       168: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       171: invokevirtual #269                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       174: getstatic     #261                // Field java/lang/System.out:Ljava/io/PrintStream;
+       177: new           #26                 // class java/lang/StringBuilder
+       180: dup
+       181: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+       184: ldc_w         #276                // String RESULT built=
+       187: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       190: aload         5
+       192: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       195: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       198: invokevirtual #269                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       201: getstatic     #261                // Field java/lang/System.out:Ljava/io/PrintStream;
+       204: new           #26                 // class java/lang/StringBuilder
+       207: dup
+       208: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+       211: ldc_w         #278                // String RESULT ann=
+       214: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       217: invokestatic  #280                // Method annotated:()Ljava/lang/String;
+       220: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       223: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       226: invokevirtual #269                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       229: getstatic     #261                // Field java/lang/System.out:Ljava/io/PrintStream;
+       232: new           #26                 // class java/lang/StringBuilder
+       235: dup
+       236: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+       239: ldc_w         #283                // String RESULT color=
+       242: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       245: aload_1
+       246: iconst_1
+       247: invokevirtual #285                // Method pick:(I)LSample$Color;
+       250: invokevirtual #289                // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+       253: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       256: invokevirtual #269                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       259: getstatic     #261                // Field java/lang/System.out:Ljava/io/PrintStream;
+       262: new           #26                 // class java/lang/StringBuilder
+       265: dup
+       266: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+       269: ldc_w         #292                // String RESULT gen=
+       272: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       275: aload_1
+       276: iconst_3
+       277: anewarray     #105                // class java/lang/Number
+       280: dup
+       281: iconst_0
+       282: iconst_1
+       283: invokestatic  #133                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       286: aastore
+       287: dup
+       288: iconst_1
+       289: ldc2_w        #294                // double 2.5d
+       292: invokestatic  #296                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+       295: aastore
+       296: dup
+       297: iconst_2
+       298: ldc_w         #301                // float 3.0f
+       301: invokestatic  #302                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+       304: aastore
+       305: invokestatic  #137                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+       308: invokevirtual #307                // Method generics:(Ljava/util/List;)Ljava/util/List;
+       311: invokeinterface #311,  1          // InterfaceMethod java/util/List.size:()I
+       316: invokevirtual #35                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+       319: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       322: invokevirtual #269                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       325: getstatic     #261                // Field java/lang/System.out:Ljava/io/PrintStream;
+       328: new           #26                 // class java/lang/StringBuilder
+       331: dup
+       332: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+       335: ldc_w         #314                // String RESULT inner=
+       338: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       341: new           #316                // class Sample$Inner
+       344: dup
+       345: bipush        42
+       347: invokespecial #318                // Method Sample$Inner."<init>":(I)V
+       350: invokevirtual #321                // Method Sample$Inner.getX:()I
+       353: invokevirtual #35                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+       356: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       359: invokevirtual #269                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       362: return
+      LineNumberTable:
+        line 152: 0
+        line 153: 8
+        line 154: 18
+        line 155: 42
+        line 156: 52
+        line 157: 61
+        line 158: 69
+        line 159: 104
+        line 160: 111
+        line 161: 121
+        line 162: 147
+        line 163: 174
+        line 164: 201
+        line 165: 229
+        line 166: 259
+        line 167: 325
+        line 168: 362
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     363     0  args   [Ljava/lang/String;
+            8     355     1     s   LSample;
+           18     345     2     r   I
+          104     259     3     l   Ljava/util/List;
+          111     252     4   out   Ljava/lang/String;
+          121     242     5 built   Ljava/lang/String;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+          104     259     3     l   Ljava/util/List<Ljava/lang/String;>;
+
+  private static int lambda$lambdaish$3(java.lang.String, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;)I
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_1
+         1: invokevirtual #52                 // Method java/lang/String.length:()I
+         4: aload_0
+         5: invokevirtual #52                 // Method java/lang/String.length:()I
+         8: invokestatic  #324                // Method java/lang/Integer.compare:(II)I
+        11: ireturn
+      LineNumberTable:
+        line 120: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0     x   Ljava/lang/String;
+            0      12     1     y   Ljava/lang/String;
+
+  private static void lambda$lambdaish$2(java.util.List, java.util.function.Function, java.lang.String);
+    descriptor: (Ljava/util/List;Ljava/util/function/Function;Ljava/lang/String;)V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: invokeinterface #326,  2          // InterfaceMethod java/util/function/Function.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+         8: checkcast     #53                 // class java/lang/String
+        11: invokeinterface #122,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        16: pop
+        17: return
+      LineNumberTable:
+        line 119: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 mapped   Ljava/util/List;
+            0      18     1    up   Ljava/util/function/Function;
+            0      18     2     s   Ljava/lang/String;
+
+  private static boolean lambda$lambdaish$1(java.lang.String);
+    descriptor: (Ljava/lang/String;)Z
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #52                 // Method java/lang/String.length:()I
+         4: iconst_3
+         5: if_icmple     12
+         8: iconst_1
+         9: goto          13
+        12: iconst_0
+        13: ireturn
+      LineNumberTable:
+        line 116: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      14     0     s   Ljava/lang/String;
+      StackMapTable: number_of_entries = 2
+        frame_type = 12 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private static java.lang.String lambda$lambdaish$0(java.lang.String);
+    descriptor: (Ljava/lang/String;)Ljava/lang/String;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: new           #26                 // class java/lang/StringBuilder
+         3: dup
+         4: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+         7: aload_0
+         8: invokevirtual #331                // Method java/lang/String.toUpperCase:()Ljava/lang/String;
+        11: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        14: ldc_w         #334                // String ::
+        17: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        20: aload_0
+        21: invokevirtual #52                 // Method java/lang/String.length:()I
+        24: invokevirtual #35                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        27: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        30: areturn
+      LineNumberTable:
+        line 115: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      31     0     s   Ljava/lang/String;
+}
+SourceFile: "Sample.java"
+BootstrapMethods:
+  0: #456 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #434 (Ljava/lang/Object;)Ljava/lang/Object;
+      #435 REF_invokeStatic Sample.lambda$lambdaish$0:(Ljava/lang/String;)Ljava/lang/String;
+      #438 (Ljava/lang/String;)Ljava/lang/String;
+  1: #456 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #439 (Ljava/lang/Object;)Z
+      #440 REF_invokeStatic Sample.lambda$lambdaish$1:(Ljava/lang/String;)Z
+      #443 (Ljava/lang/String;)Z
+  2: #456 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #444 (Ljava/lang/Object;)V
+      #446 REF_invokeStatic Sample.lambda$lambdaish$2:(Ljava/util/List;Ljava/util/function/Function;Ljava/lang/String;)V
+      #449 (Ljava/lang/String;)V
+  3: #456 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #450 (Ljava/lang/Object;Ljava/lang/Object;)I
+      #452 REF_invokeStatic Sample.lambda$lambdaish$3:(Ljava/lang/String;Ljava/lang/String;)I
+      #455 (Ljava/lang/String;Ljava/lang/String;)I
+InnerClasses:
+  static final #464= #165 of #11;         // Color=class Sample$Color of class Sample
+  static #465= #316 of #11;               // Inner=class Sample$Inner of class Sample
+  static #468= #466 of #11;               // Meta=class Sample$Meta of class Sample
+  public static final #473= #469 of #471; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

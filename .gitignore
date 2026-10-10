@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+gui/bin/
+gui/*.a
+gui/*.o
+gui/*.obj
