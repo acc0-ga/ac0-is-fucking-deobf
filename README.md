@@ -1,4 +1,4 @@
-# jarobf
+# ac0-is-fucking-deobf
 
 A JVM jar obfuscator with a pure-Python backend and an optional Dear ImGui
 GUI. It rewrites class files directly (constant pool, bytecode, stack map
